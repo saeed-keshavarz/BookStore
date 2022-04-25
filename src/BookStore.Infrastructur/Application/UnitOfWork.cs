@@ -8,5 +8,6 @@ namespace BookStore.Infrastructur.Application
 {
     public interface UnitOfWork
     {
+        void Commit();
     }
 }

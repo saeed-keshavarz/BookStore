@@ -6,6 +6,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BookStore.Entities\BookStore.Entities.csproj" />
+    <ProjectReference Include="..\BookStore.Infrastructur\BookStore.Infrastructur.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Books\Contracts\" />
   </ItemGroup>
 
 </Project>
