@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.Infrastructur.Application
 {
-    internal class UnitOfWork
+    public interface UnitOfWork
     {
     }
 }
