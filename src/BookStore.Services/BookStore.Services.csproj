@@ -9,8 +9,4 @@
     <ProjectReference Include="..\BookStore.Infrastructur\BookStore.Infrastructur.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Books\Contracts\" />
-  </ItemGroup>
-
 </Project>

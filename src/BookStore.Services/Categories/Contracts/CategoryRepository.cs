@@ -10,5 +10,8 @@ namespace BookStore.Services.Categories.Contracts
     public interface CategoryRepository
     {
         void Add(Category category);
+        IList<GetCategoryDto> GetAll();
+        Category FindById(int id);
+        bool IsCategoryTitleExist(string title);
     }
 }

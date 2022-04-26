@@ -21,6 +21,7 @@ namespace BookStore.Persistence.EF.Categories
             _dataContext.Categories.Add(category);
         }
 
+
         public IList<GetCategoryDto> GetAll()
         {
             return _dataContext.Categories
@@ -29,6 +30,17 @@ namespace BookStore.Persistence.EF.Categories
                     Id = _.Id,
                     Title = _.Title
                 }).ToList();
+        }
+
+        public bool IsCategoryTitleExist(string title)
+        {
+            return _dataContext.Categories
+                .Any(_ => _.Title == title);
+        }
+
+        public Category FindById(int id)
+        {
+            return _dataContext.Categories.Find(id);
         }
     }
 }

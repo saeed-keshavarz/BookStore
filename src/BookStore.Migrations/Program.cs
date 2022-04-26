@@ -66,7 +66,7 @@ namespace BookStore.Migrations
         {
             var configurations = new ConfigurationBuilder()
                 .SetBasePath(baseDir)
-                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .AddJsonFile("appSettings.json", optional: true, reloadOnChange: true)
                 .AddEnvironmentVariables()
                 .AddCommandLine(args)
                 .Build();
